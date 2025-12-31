@@ -330,7 +330,7 @@ Future<> TfrtGpuBuffer::ToLiteral(MutableLiteralBase* literal) {
 
 Future<> TfrtGpuBuffer::ToLiteralHelper(Future<MutableLiteralBase*> literal) {
   tsl::profiler::TraceMe traceme("TfrtGpuBuffer::ToLiteral");
-  auto [promise, future] = Future<>::MakePromise();
+  auto [promise, future] = MakePromise<>();
   auto usage_event = tsl::MakeConstructedAsyncValueRef<GpuEvent>();
   auto* device_buffer = AcquireUsage(usage_event);
   if (device_buffer == nullptr) {
@@ -566,7 +566,7 @@ Future<> TfrtGpuBuffer::CopyRawToHostFuture(Future<void*> dst_future,
                                             int64_t transfer_size) {
   VLOG(3) << "TfrtGpuBuffer::CopyRawToHostFuture";
   tsl::profiler::TraceMe traceme("TfrtGpuBuffer::CopyRawToHostFuture");
-  auto [promise, future] = Future<>::MakePromise();
+  auto [promise, future] = MakePromise<>();
   auto usage_event = tsl::MakeConstructedAsyncValueRef<GpuEvent>();
   auto* device_buffer = AcquireUsage(usage_event);
   MarkGpuEventReadyOnExit usage_event_holder(std::move(usage_event));

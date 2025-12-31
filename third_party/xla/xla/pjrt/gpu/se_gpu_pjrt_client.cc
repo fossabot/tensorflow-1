@@ -709,7 +709,7 @@ StreamExecutorGpuClient::CrossHostSendBuffers(
   futures.reserve(buffers.size());
   promises.reserve(buffers.size());
   for (int i = 0; i < buffers.size(); ++i) {
-    auto [promise, future] = Future<>::MakePromise();
+    auto [promise, future] = MakePromise<>();
     futures.push_back(std::move(future));
     promises.push_back(std::move(promise).ToShared());
   }

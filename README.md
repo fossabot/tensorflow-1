@@ -13,6 +13,7 @@
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
 [![TF Official Continuous](https://tensorflow.github.io/build/TF%20Official%20Continuous.svg)](https://tensorflow.github.io/build#TF%20Official%20Continuous)
 [![TF Official Nightly](https://tensorflow.github.io/build/TF%20Official%20Nightly.svg)](https://tensorflow.github.io/build#TF%20Official%20Nightly)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2F24601zhong%2Ftensorflow.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2F24601zhong%2Ftensorflow?ref=badge_shield)
 
 **`Documentation`** |
 ------------------- |
@@ -173,3 +174,6 @@ Learn more about the
 ## License
 
 [Apache License 2.0](LICENSE)
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2F24601zhong%2Ftensorflow.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2F24601zhong%2Ftensorflow?ref=badge_large)
